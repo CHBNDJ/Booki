@@ -1,0 +1,987 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+header img {
+    width: 100px;
+    padding: 1em;
+}
+
+.espace {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.entete {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: flex-end;
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 1em;
+
+
+}
+
+#menu a {
+    padding: 0 30px;
+    text-decoration: none;
+    color: black;
+
+}
+
+#menu a:hover {
+    border-top: 2px blue solid;
+    padding: 0px;
+    color: dodgerblue;
+}
+
+.introduction {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+.intro {
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+
+.introduction p {
+    padding: 1em;
+}
+
+.margin10 {
+    margin-left: 5px;
+}
+
+.flexcentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.bordurerecherche {
+    width: 400px;
+    border-radius: 10px;
+
+}
+
+.recherche {
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    border: 0.5px solid #F2F2F2;
+
+}
+
+.paddingrecherche {
+    padding-left: 20px;
+
+}
+
+.background {
+    background-color: #0065FC;
+}
+
+.boutonrecherche {
+    height: 50px;
+    width: 120px;
+    color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+.loupe {
+    color: white;
+}
+
+
+.icone {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+
+
+}
+
+.fondgris {
+    background-color: #F2F2F2;
+}
+
+
+
+.bordure {
+    border: none;
+    border: 0.5px solid #F2F2F2;
+}
+
+
+
+/*Filtres*/
+
+.marginfiltre {
+    margin-top: 5px;
+    margin-bottom: 5px;
+   
+}
+
+.filtre {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.margintitrefiltre {
+    margin-right: 1em;
+    font-size: 15px;
+}
+
+.textefiltres {
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    height: 50px;
+    margin-right: 20px;
+
+
+}
+
+.iconefiltres {
+    padding-left: 20px;
+    width: 30px;
+    height: 20px;
+    color: #0065FC;
+    font-size: 20px;
+}
+
+.caractere {
+    color: black;
+    font-weight: bold;
+
+}
+
+.paddingmot {
+    padding-right: 20px;
+}
+
+.i:hover {
+    background-color: #DEEBFF;
+}
+
+.directionRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* icone info*/
+
+.info {
+    display: flex;
+    align-items: center;
+
+}
+
+.cercleinfo {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+
+.card2 {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+
+.card2 img {
+    object-fit: cover;
+}
+
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutralStar {
+    color: var(--main-bg-color);
+}
+
+
+
+
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+    background-color: #F2F2F2;
+}
+
+
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.hebergementcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 115px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card2 img {
+    width: 100%;
+    height: 115px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card .card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.fa-color {
+    color: #F2F2F2;
+}
+
+.card .card-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card .card-subtitle {
+    margin: 0;
+}
+
+.card .card-rating {
+    margin-bottom: 5px;
+
+}
+
+.card2 .card-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card2 .card-subtitle {
+    margin: 0;
+}
+
+.card2 .card-rating {
+    margin-top: 5px;
+}
+
+
+.afficher {
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+    background-color: #F2F2F2;
+
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+
+/*****Activités*****/
+
+.Activités {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.afficher2 {
+    margin-bottom: 30px;
+}
+
+.placement {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.blocactivites {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.imgactivites img {
+    width: 100%;
+    height: 530px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.cubeactivites {
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+
+
+.flexcolonne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+/***** Footer *****/
+.footback {
+    background-color: #F2F2F2;
+
+}
+
+.footer {
+    height: 300px;
+    margin-top: 100px;
+
+}
+
+.sizefoot {
+    height: 150px;
+    margin: auto;
+}
+
+.sizefoot2 {
+    height: 150px;
+    margin: auto;
+}
+
+.sizefoot3 {
+    height: 150px;
+    margin: auto;
+}
+
+.margfoot1 {
+    margin-left: 5%;
+
+}
+
+.margfoot2 {
+    margin-right: 30%;
+
+}
+
+.decorationnone {
+    text-decoration: none;
+}
+
+.lienfooter {
+    color: black;
+}
+
+.marglienfooter {
+    height: 30px;
+
+}
+
+.espace2 {
+    margin-bottom: 5px;
+}
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media screen and (max-width: 1024px) {
+
+
+
+    .margintitrefiltre {
+        margin: auto;
+        width: 100%;
+        height: 150px;
+    }
+
+    .filtre {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 100%;
+    }
+
+    .textefiltres {
+        border: 2px solid #F2F2F2;
+        border-radius: 30px;
+        height: 50px;
+    }
+
+
+    .paddingmot {
+        padding-right: 20px;
+    }
+
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+
+    .hebergements {
+        width: 100%;
+    }
+
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .populaires-cards .card {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+
+    .imgactivites img {
+        width: 100%;
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+
+
+    .blocactivites {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .footer {
+        width: 100%;
+        padding-top: 15px;
+        height: 100%;
+        margin-top: 30px;
+    }
+
+    .sizefoot2 {
+        height: 150px;
+        margin-right: 15%;
+    }
+
+
+    .margfoot2 {
+        margin-right: 10%;
+    }
+
+
+    .sizefoot3 {
+        height: 150px;
+        margin-right: 10px;
+    }
+
+
+}
+
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+
+
+    /***Header***/
+
+    .main-container {
+        width: 100%;
+        padding: 0 0;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+    .espace {
+        display: flex;
+        justify-content: center;
+    }
+
+    .entete {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 1em;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+
+    #menu a:hover {
+        border-bottom: 2px #0065FC solid;
+        border-top: 0;
+        border-bottom-width: 2px;
+        color: dodgerblue;
+        width: 200%;
+    }
+
+    #menu a {
+        width: 100%;
+        border-top: 0;
+        border-bottom: 2px #F2F2F2 solid;
+        border-bottom-width: 2px;
+        padding-bottom: 12px;
+    }
+
+
+    .intro {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    .margin10 {
+        margin-left: 10px;
+    }
+
+    .marginfiltre {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .margintitrefiltre {
+        margin: auto;
+        width: 100%;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        height: auto;
+    }
+
+    .textefiltres {
+        border: 2px solid #F2F2F2;
+        border-radius: 30px;
+        height: 50px;
+        margin-block: 10px;
+        width: 42%
+    }
+
+    .introduction {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .bordurerecherche {
+        border-radius: 10px;
+        width: 90%;
+        padding-bottom: 30px;
+        padding-top: 30px;
+
+    }
+
+    .boutonrecherche {
+        height: 50px;
+        width: 15%;
+        color: white;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .recherche {
+        height: 50px;
+        width: 220px;
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        border: 0.5px solid #F2F2F2;
+
+    }
+
+    .textrechercher {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        color: white;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+
+    }
+
+
+
+
+    /*** Hebergements ***/
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+        padding: 30px;
+        margin-top: 30px;
+
+    }
+
+
+    .populaires {
+        background-color: #F2F2F2;
+    }
+
+
+    .hebergements {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 2;
+        background-color: white;
+    }
+
+    .hebergementcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .card2 img {
+        width: 100%;
+        height: 100px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+        background-color: white;
+
+    }
+
+
+    .card2 {
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 0;
+
+    }
+
+    .populaires-cards .card {
+        width: 100%;
+    }
+
+    .populaires-cards .card-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+
+    }
+
+    .populaires {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        order: 1;
+
+
+    }
+
+    .populaires section {
+        background-color: #F2F2F2;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 20px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        width: 100%;
+    }
+
+    .card img {
+        width: 40%;
+        height: 150px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+
+    }
+
+
+
+    /***Activités***/
+
+    .Activités {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blocactivites {
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgactivites img {
+        width: 100%;
+        height: 150px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+
+    .cubeactivites {
+        width: 90%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px 1px #F2F2F2;
+    }
+
+
+    .placement {
+        margin-bottom: 1em;
+    }
+
+    .afficher2 {
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+
+
+    .footback {
+        background-color: #F2F2F2;
+    }
+
+    .footer {
+        height: 450px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .sizefoot2 {
+        margin-right: 50%;   
+    }
+
+    .sizefoot3 {
+        margin-left: 5%;
+    }
+
+    .espace2 {
+        margin-top: 30px;
+    }
+
+    .margfoot2 {
+        margin-right: 65%;
+    }
+
+}
